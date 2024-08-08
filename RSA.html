@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RSA Encryption & Decryption</title>
+    <link rel="stylesheet" href="RSAstyles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>RSA Encryption & Decryption</h1>
+        <p>Where n is equal to n = p * q, so we add the values to p and q and then to e.</p>
+        <div class="input-group">
+            <label>This is value n: <span id="n-value"></span></label>
+        </div>
+        <div class="input-group">
+            <label>Enter p value:</label>
+            <input type="number" id="p-value">
+        </div>
+        <div class="input-group">
+            <label>Enter q value:</label>
+            <input type="number" id="q-value">
+        </div>
+        <div class="input-group">
+            <label>Enter e value:</label>
+            <input type="number" id="e-value">
+        </div>
+        <div class="input-group">
+            <label>Message:</label>
+            <input type="text" id="message">
+        </div>
+        <div class="buttons">
+            <button onclick="encrypt()">Encrypt</button>
+            <button onclick="decrypt()">Decrypt</button>
+            <button onclick="reset()">Reset</button>
+        </div>
+        <div class="output-group">
+            <label>Encrypted Message: <span id="encrypted-message"></span></label>
+        </div>
+        <div class="output-group">
+            <label>Decrypted Message: <span id="decrypted-message"></span></label>
+        </div>
+    </div>
+    <script src="RSAscript.js"></script>
+</body>
+</html>
